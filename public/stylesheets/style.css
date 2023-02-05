@@ -1,8 +1,111 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  color: rgb(81, 79, 80);
 }
 
-a {
-  color: #00B7FF;
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  border: 2px rgb(224, 222, 238) solid;
+  width: 98vw;
+  overflow: none;
+  margin: auto;
+  margin-top: 1vh;
+  padding: 0;
+  height: auto;
+  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.main-header, .send-message-header {
+  font-size: 2.5em;
+}
+
+.add-message-button {
+  font-size: 1em;
+  background-color: rgb(156, 151, 121);
+  color: rgb(224, 222, 238);
+  min-height: 3vh;
+  min-width: 15vw;
+  border-radius: 15px;
+}
+
+.message-list {
+  height: auto;
+  overflow-y: scroll;
+  width: 75vw;
+}
+
+.message-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto;
+  border-left: 2px rgb(152, 145, 242) solid;
+  margin: 0;
+  margin-bottom: 2vh;
+}
+
+.user-heading-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 1vw;
+}
+
+.message-user, .message-text {
+  padding-left: 1vw;
+}
+
+.message-timestamp {
+  font-size: 0.7em;
+}
+
+.return-button {
+  font-size: 1em;
+  background-color: rgb(156, 151, 121);
+  color: rgb(224, 222, 238);
+  min-height: 3vh;
+  min-width: 20vw;
+  border-radius: 15px;
+  margin: 0;
+  margin-top: 1vh;
+}
+
+.send-message-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75vw;
+  height: auto;
+  gap: 1vh;
+}
+
+label {
+  font-size: 1.5em;
+  width: 70vw;
+}
+
+input {
+  min-height: 3vh;
+  width: 70vw;
+  font-size: 1.5em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#submit-button {
+  font-size: 1em;
+  background-color: rgb(156, 151, 121);
+  color: rgb(224, 222, 238);
+  min-height: 3vh;
+  min-width: 15vw;
+  max-width: 30vw;
+  border-radius: 15px;
+  margin: 0;
+  margin-bottom: 1vh;
 }

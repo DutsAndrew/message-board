@@ -2,10 +2,24 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1 class="main-header"><%= title %></h1>
+    <a href="/new"><button class="add-message-button">Add Message</button></a>
+    <p class="welcome-text">Welcome to <%= title %>, here is the latest:</p>
+    <ul class="message-list">
+      <% messages.map(function(message) { %>
+        <div class="message-container">
+          <div class="user-heading-text">
+            <p class="message-user"><strong><%= message.user %></strong></p>
+            <p class="message-timestamp"><em>(<%= message.added %>)</em></p>
+          </div>
+          <p class="message-text">
+            <%= message.text %>
+          </p>
+        </div>
+      <% }); %>
+    </ul>
   </body>
 </html>
